@@ -1,0 +1,2 @@
+"TimeCreated","EventId","Computer","TargetUserName","TargetDomainName","WorkstationName","IpAddress","IpPort","LogonType","Status","SubStatus","FailureReason","ProcessName","AuthenticationPkg"
+"2026-08-25T16:45:00.0000000-04:00","4625","LAB-WIN11","SOC-Lab-User","LAB-WIN11","LAB-WIN11","192.0.2.10","0","3","0xC000006D","0xC000006A","Unknown user name or bad password","C:\Windows\System32\svchost.exe","NtLmSsp"
