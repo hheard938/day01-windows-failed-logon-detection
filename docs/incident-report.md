@@ -44,5 +44,5 @@ Recommended production actions include:
 The failed logons were intentionally generated on an owned Windows lab system to validate Security Event ID 4625 collection, PowerShell analysis, evidence preservation, and SOC incident-triage procedures.
 ## Lessons Learned
 This project demonstrated how Windows records failed authentication activity and how Event ID 4625 fields support an investigation. I learned to distinguish controlled test activity from potentially malicious behavior by examining the target account, timestamps, logon type, status code, source, and authorization context.
-In a production SOC workflow, I would improve this process by forwarding events to a SIEM, establishing alert thresholds, correlating failures with successful logons, mapping detections to MITRE ATT&CK, and documenting escalation procedures.
-has context menu
+In a production SOC workflow, I would improve this process by forwarding events to a SIEM, establishing alert thresholds, correlating failed and successful logons, mapping confirmed suspicious behavior to the appropriate MITRE ATT&CK techniques, and documenting escalation procedures.
+
