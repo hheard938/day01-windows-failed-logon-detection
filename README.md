@@ -31,10 +31,10 @@ Detection rule: [`detections/windows_failed_logon_4625.yml`](detections/windows_
 The lab successfully produced and captured Windows failed-logon records. The exported data contained the fields needed for basic SOC triage, including timestamps, usernames, source information, logon types, and failure details.
 The activity was expected because it was generated in an authorized test environment. In a production environment, the same pattern would require validation against account ownership, source-system history, asset criticality, and other authentication activity.
 ## MITRE ATT&CK Mapping
-- **Technique:** Brute Force
+- **Related Technique:** Brute Force
 - **Technique ID:** T1110
 - **Tactic:** Credential Access
-A failed logon does not prove malicious activity by itself. Repeated failures, unusual timing, unfamiliar sources, or activity involving privileged accounts would increase the alert’s severity.
+- **Detection Context:** Windows Security Event ID 4625 records failed authentication attempts. Repeated failures may be consistent with brute-force or password-guessing activity, but failed logons alone do not establish malicious activity. This lab used authorized test failures to demonstrate how an analysis identify and investigate this pattern.
 ## Evidence
 - [Audit policy configuration](evidence/01-audit-policy.png)
 - [Windows Event ID 4625](evidence/02-event-4625.png)
